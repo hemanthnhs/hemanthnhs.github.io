@@ -1,0 +1,18 @@
+.profile-img {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.left-section {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.media-btns-section {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
