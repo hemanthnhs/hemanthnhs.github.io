@@ -3,3 +3,32 @@ body {
     Arial, sans-serif;
   line-height: 1.7;
 }
+
+.header-container {
+  background-color: #eee;
+  padding: 1% 0.5% 1% 0.5%;
+}
+
+.profile-img {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 5%;
+}
+
+.about-section {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.summary-section {
+  padding-left: 30px;
+}
+
+.media-btns-section {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
