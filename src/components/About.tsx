@@ -1,5 +1,7 @@
-import profile_image from "./../assets/images/profile-image.jpeg"
 import { Row, Col } from "antd"
+
+const profile_image =  require("./../assets/images/profile-image.jpeg")
+
 
 const About = () => {
     return (

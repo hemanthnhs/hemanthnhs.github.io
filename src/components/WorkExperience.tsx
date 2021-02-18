@@ -21,7 +21,7 @@ const WorkExperience = () => {
             <List
                 itemLayout="horizontal"
                 dataSource={work}
-                renderItem={(item) => (
+                renderItem={(item: any) => (
                     <List.Item
                         extra={
                             <img
@@ -58,7 +58,7 @@ const WorkExperience = () => {
                                 <List
                                     size="small"
                                     dataSource={item.responsibilities}
-                                    renderItem={(item) => (
+                                    renderItem={(item: any) => (
                                         <List.Item>{item}</List.Item>
                                     )}
                                 />
