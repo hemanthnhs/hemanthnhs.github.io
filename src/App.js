@@ -2,17 +2,17 @@ import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import RightContainer from "./components/RightContainer";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col } from 'antd';
 
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Row>
-        <Col md={4}>
+        <Col span={0}>
           <About />
         </Col>
-        <Col md={8}>
+        <Col offset={1} span={22}>
           <RightContainer />
         </Col>
       </Row>

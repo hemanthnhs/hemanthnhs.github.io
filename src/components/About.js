@@ -1,6 +1,6 @@
 import profile_image from "./../assets/images/profile-image.jpeg";
-import { Row, Col } from "react-bootstrap";
-import { Github, Linkedin, FileEarmarkPerson } from "react-bootstrap-icons";
+import { Row, Col } from 'antd';
+
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
         </Row>
       </div>
       <div className="about-section media-btns-section">
-        <Row>
+        {/* <Row>
           <Col sm={3}></Col>
           <Col sm={2}>
             <FileEarmarkPerson color="#082138" size={35} />
@@ -52,7 +52,7 @@ const About = () => {
             <Github color="#320030" size={35} />
           </Col>
           <Col sm={3}></Col>
-        </Row>
+        </Row> */}
       </div>
       <div className="about-section">
         <Row>

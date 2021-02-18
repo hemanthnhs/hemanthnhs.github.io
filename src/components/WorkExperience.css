@@ -1,0 +1,12 @@
+.work-position{
+  font-weight: bold;
+}
+
+.work-company{
+  font-weight: bold;
+}
+
+.work-location{
+  margin-left: 10px;
+  color: slategrey;
+}
