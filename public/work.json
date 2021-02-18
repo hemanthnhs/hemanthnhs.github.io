@@ -6,10 +6,12 @@
         "location": "Boston, Massachussets",
         "startDate": "Jan, 2020",
         "endDate": "Sept, 2020",
-        "responsibilities": ["Developed Risk Analysis application using Spring, Angular to present key analytics assisting investors understand portfolio’s sensitivity and impacts under different market conditions."
-            ,"Engineered visualizations for market sensitivity using Angular to launch advanced portfolio management suite for firms and advisors to seamlessly construct and manage fixed income portfolios."
-            ,"Streamlined network calls and designed a data processing algorithm for UI components to improve performance and to reduce the Time to Interactive (TTI) of home page by 20%."
-            ,"Optimized asset simulation by 80% to generate returns under extreme market conditions using Python, Flask and Spark."],
+        "responsibilities": [
+            "Developed Risk Analysis application using Spring, Angular to present key analytics assisting investors understand portfolio’s sensitivity and impacts under different market conditions.",
+            "Engineered visualizations for market sensitivity using Angular to launch advanced portfolio management suite for firms and advisors to seamlessly construct and manage fixed income portfolios.",
+            "Streamlined network calls and designed a data processing algorithm for UI components to improve performance and to reduce the Time to Interactive (TTI) of home page by 20%.",
+            "Optimized asset simulation by 80% to generate returns under extreme market conditions using Python, Flask and Spark."
+        ],
         "links": []
     },
     {
@@ -19,11 +21,12 @@
         "location": "Hyderabad, India",
         "startDate": "Sept, 2017",
         "endDate": "Nov, 2018",
-        "responsibilities": ["Created APIs for Controlled Revision Tracking application and introduced new features to streamline document management process flow and to accelerate concurrent engineering processes using Java."
-        ,"Developed widgets for Enterprise Content Management using Backbone.js with functionality to build persona driven dashboards for efficient control of projects and to observe insights of work processes."
-        ,"Redesigned architecture to accomplish bulk transitions 14% faster, minimizing impact on scheduled processes."
-        ,"Collaborated in performance analysis and implemented architecture changes to enhance API response time by 20%."
-        ,"Identified OWASP vulnerabilities and resolved Injection, XSS, Authentication issues ensuring security compliance."
+        "responsibilities": [
+            "Created APIs for Controlled Revision Tracking application and introduced new features to streamline document management process flow and to accelerate concurrent engineering processes using Java.",
+            "Developed widgets for Enterprise Content Management using Backbone.js with functionality to build persona driven dashboards for efficient control of projects and to observe insights of work processes.",
+            "Redesigned architecture to accomplish bulk transitions 14% faster, minimizing impact on scheduled processes.",
+            "Collaborated in performance analysis and implemented architecture changes to enhance API response time by 20%.",
+            "Identified OWASP vulnerabilities and resolved Injection, XSS, Authentication issues ensuring security compliance."
         ],
         "links": []
     },
@@ -34,8 +37,10 @@
         "location": "Bengaluru, India",
         "startDate": "May, 2016",
         "endDate": "Feb, 2018",
-        "responsibilities": ["Engineered an in-house Customer Relationship Management (CRM) tool using Ruby on Rails, Angular to provide customer information and reports through a dashboard to support team for quick resolutions.",
-        "Developed chatbot application using React and Ruby on Rails to enable self-service, bringing down high hold times to ensure customer satisfaction, minimizing customer-human interaction by 73%."],
+        "responsibilities": [
+            "Engineered an in-house Customer Relationship Management (CRM) tool using Ruby on Rails, Angular to provide customer information and reports through a dashboard to support team for quick resolutions.",
+            "Developed chatbot application using React and Ruby on Rails to enable self-service, bringing down high hold times to ensure customer satisfaction, minimizing customer-human interaction by 73%."
+        ],
         "links": []
     }
 ]
