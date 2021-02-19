@@ -1,7 +1,17 @@
 import "./WorkExperience.css"
 import { useEffect, useState } from "react"
-import { List, Avatar } from "antd"
+import { List, Avatar, Carousel, Col, Card } from "antd"
 import axios from "axios"
+
+const { Meta } = Card
+
+const renderLinks = (items: any) => {
+    let links: any = []
+    items.map((item: any) => {
+        links.push(<div>{item.link}</div>)
+    })
+    return <div>{links}</div>
+}
 
 const WorkExperience = () => {
     const [work, setWork] = useState([])
@@ -24,11 +34,46 @@ const WorkExperience = () => {
                 renderItem={(item: any) => (
                     <List.Item
                         extra={
-                            <img
-                                width={272}
-                                alt="logo"
-                                src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-                            />
+                            item.links.length != 0 && (
+                                <Col span={4} offset={1}>
+                                    <Card
+                                        className="link-card"
+                                        title={item.linksTitle}
+                                        bordered={false}
+                                    >
+                                        {
+                                            <List
+                                                itemLayout="horizontal"
+                                                dataSource={item.links}
+                                                renderItem={(linkItem: any) => (
+                                                    <List.Item className="links-list-item">
+                                                        <List.Item.Meta
+                                                            className="links-list-item-meta"
+                                                            avatar={
+                                                                <Avatar
+                                                                    src={
+                                                                        linkItem.logo
+                                                                    }
+                                                                />
+                                                            }
+                                                            title={
+                                                                <a
+                                                                    href={
+                                                                        linkItem.link
+                                                                    }
+                                                                    className="links-list-item-title"
+                                                                >
+                                                                    {linkItem.title}
+                                                                </a>
+                                                            }
+                                                        />
+                                                    </List.Item>
+                                                )}
+                                            />
+                                        }
+                                    </Card>
+                                </Col>
+                            )
                         }
                     >
                         <List.Item.Meta
@@ -41,8 +86,14 @@ const WorkExperience = () => {
                             }
                             title={
                                 <>
-                                    <div className="work-position">
-                                        {item.position}
+                                    <div>
+                                        <span className="work-position">
+                                            {item.position}
+                                        </span>
+                                        <span className="work-dates">
+                                            {item.startDate + " - "}
+                                            {item.endDate ? item.endDate : "Present"}
+                                        </span>
                                     </div>
                                     <div>
                                         <span className="work-company">
@@ -58,8 +109,10 @@ const WorkExperience = () => {
                                 <List
                                     size="small"
                                     dataSource={item.responsibilities}
-                                    renderItem={(item: any) => (
-                                        <List.Item>{item}</List.Item>
+                                    renderItem={(respItem: any) => (
+                                        <List.Item className="work-responsibility">
+                                            {respItem}
+                                        </List.Item>
                                     )}
                                 />
                             }
