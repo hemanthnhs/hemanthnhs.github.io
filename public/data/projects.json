@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Plagiarism Detector",
+        "description": "This is the description",
+        "date": "Nov 2020",
+        "headerImg": "https://elearningindustry.com/wp-content/uploads/2017/03/top-free-plagiarism-detection-tools-elearning-professionals-e1533286515886.jpg",
+        "accomplishments": [
+            "Designed system architecture and created a stateless server using Node.js, Express.js to detect and identify plagiarism between multi-file programs using efficient structural comparison techniques",
+            "Designed algorithm to detect similarities in the code that attempts to avoid detection by performing AST transformations",
+            "Developed UI with React by considering usability heuristic principles to selectively examine and compare similarities"
+        ]
+    },
+    {
+        "title": "eShopR",
+        "description": "This is the description",
+        "date": "Dec 2019",
+        "headerImg": "https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce.jpg",
+        "accomplishments": [
+            "Designed scalable ecommerce application with a seller portal for inventory management and to analyze purchase trends",
+            "Created landing page builder using React allowing sellers to dynamically design web pages to present personalized stores",
+            "Implemented product search and recommendation using Elasticsearch to retrieve results 60% faster"
+        ]
+    }
+]

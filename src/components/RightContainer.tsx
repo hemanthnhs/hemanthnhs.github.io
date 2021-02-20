@@ -1,5 +1,5 @@
-import ProjectContainer from "./Projects"
-import WorkExperience from "./WorkExperience"
+import ProjectContainer from "./projects/Projects"
+import WorkExperience from "./work/WorkExperience"
 import { Tabs } from "antd"
 
 const { TabPane } = Tabs
@@ -7,7 +7,7 @@ const { TabPane } = Tabs
 const RightContainer = () => {
     return (
         <div>
-            <Tabs defaultActiveKey="work">
+            <Tabs defaultActiveKey="project">
                 <TabPane tab="Work Experience" key="work">
                     <WorkExperience />
                 </TabPane>

@@ -1,25 +1,15 @@
 import "./WorkExperience.css"
 import { useEffect, useState } from "react"
-import { List, Avatar, Carousel, Col, Card } from "antd"
 import axios from "axios"
-
-const { Meta } = Card
-
-const renderLinks = (items: any) => {
-    let links: any = []
-    items.map((item: any) => {
-        links.push(<div>{item.link}</div>)
-    })
-    return <div>{links}</div>
-}
+import { List, Avatar, Col, Card } from "antd"
+import { EnvironmentOutlined, FireTwoTone, LinkOutlined } from "@ant-design/icons"
 
 const WorkExperience = () => {
     const [work, setWork] = useState([])
     useEffect(() => {
         axios
-            .get("./work.json")
+            .get("./data/work.json")
             .then((resp) => {
-                console.log("Success", resp["data"])
                 setWork(resp["data"])
             })
             .catch((resp) => {
@@ -38,7 +28,12 @@ const WorkExperience = () => {
                                 <Col span={4} offset={1}>
                                     <Card
                                         className="link-card"
-                                        title={item.linksTitle}
+                                        title={
+                                            <>
+                                                <LinkOutlined />
+                                                {item.linksTitle}
+                                            </>
+                                        }
                                         bordered={false}
                                     >
                                         {
@@ -100,6 +95,9 @@ const WorkExperience = () => {
                                             {item.companyName}
                                         </span>
                                         <span className="work-location">
+                                            <span className="work-loc-icon">
+                                                <EnvironmentOutlined />
+                                            </span>
                                             {item.location}
                                         </span>
                                     </div>
@@ -107,10 +105,14 @@ const WorkExperience = () => {
                             }
                             description={
                                 <List
+                                    className="work-responsibility-list"
                                     size="small"
                                     dataSource={item.responsibilities}
                                     renderItem={(respItem: any) => (
                                         <List.Item className="work-responsibility">
+                                            <span className="work-responsibility-icon">
+                                                <FireTwoTone />
+                                            </span>
                                             {respItem}
                                         </List.Item>
                                     )}

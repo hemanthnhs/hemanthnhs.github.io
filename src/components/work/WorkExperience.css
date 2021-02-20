@@ -46,3 +46,21 @@
 .link-card .ant-card-head {
     min-height: fit-content;
 }
+
+.work-loc-icon .anticon-environment {
+    vertical-align: text-bottom;
+    padding-right: 1px;
+}
+
+.work-responsibility-icon .anticon-fire {
+    vertical-align: text-bottom;
+    padding-right: 5px;
+}
+
+.work-responsibility-list {
+    text-align: justify;
+}
+
+.link-card .anticon-link {
+    margin-right: 4px;
+}
