@@ -1,0 +1,34 @@
+{
+    "programming": [
+        ["C", ""],
+        ["C++", ""],
+        ["Java", "FaJava"],
+        ["Python", "FaPython"],
+        ["Spring", "SiSpring"],
+        ["Hibernate", "FaJava"],
+        ["Django", "SiDjango"],
+        ["Ruby On Rails", "DiRuby"]
+    ],
+    "web": [
+        ["HTML", "FaHtml5"],
+        ["CSS", "FaCss3Alt"],
+        ["JavaScript", "SiJavascript"],
+        ["TypeScript", "SiTypescript"],
+        ["Node.js", "FaNode"],
+        ["React", "FaReact"],
+        ["Angular", "FaAngular"]
+    ],
+    "tools": [
+        ["Git", "FaGithubAlt"],
+        ["AWS", "FaAws"],
+        ["Docker", "FaDocker"]
+    ],
+    "databases": [
+        ["Oracle", "GrOracle"],
+        ["MySQL", "SiMysql"],
+        ["PostgreSQL", "SiPostgresql"],
+        ["MongoDB", "DiMongodb"],
+        ["Redis", "DiRedis"],
+        ["ElasticSearch", "SiElasticsearch"]
+    ]
+}
