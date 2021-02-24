@@ -1,7 +1,6 @@
 [
     {
         "title": "Plagiarism Detector",
-        "description": "This is the description",
         "date": "Nov 2020",
         "headerImg": "https://elearningindustry.com/wp-content/uploads/2017/03/top-free-plagiarism-detection-tools-elearning-professionals-e1533286515886.jpg",
         "accomplishments": [
@@ -11,14 +10,33 @@
         ]
     },
     {
-        "title": "eShopR",
-        "description": "This is the description",
+        "title": "eShopR - eCommerce App",
         "date": "Dec 2019",
         "headerImg": "https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce.jpg",
         "accomplishments": [
             "Designed scalable ecommerce application with a seller portal for inventory management and to analyze purchase trends",
             "Created landing page builder using React allowing sellers to dynamically design web pages to present personalized stores",
             "Implemented product search and recommendation using Elasticsearch to retrieve results 60% faster"
+        ]
+    },
+    {
+        "title": "eStock - Stock Market Trading App",
+        "date": "Apr 2019",
+        "headerImg": "https://s.yimg.com/uu/api/res/1.2/mTvND9vpWeCIBjcuz_1rPA--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/hd/cp-video-transcode/prod/2020-11/18/5fb59790e75f6958827fa097/5fb59790e75f6958827fa098_o_U_v2.jpg",
+        "accomplishments": [
+            "Designed a MVC architecture by reviewing various design patterns considering the use cases to model an application for Stock Market",
+            "Developed trading, portfolio creation, quote monitoring and extended hours trading features using Java and Angular",
+            "Separated critical components into microservices and deployed to AWS supporting application with different UIs"
+        ]
+    },
+    {
+        "title": "eFactory - Factory Manager",
+        "date": "Apr 2019",
+        "headerImg": "https://www.ptc.com/-/media/Images/Redesign/Blogs/digital-transformation-trends-2019.jpg?h=280&la=en&w=600&hash=9604B2B49CBD7882B9832B89241DF33B",
+        "accomplishments": [
+            "Developed a scalable distributed client-server application for a robot factory with Primary-Backup replication protocol to improve parallelism and availability",
+            "Implemented static and dynamic load balancing techniques to efficiently distribute customer requets to different factories to facilitate High availability",
+            "Created a membership server, to allow and manage dynamic addition/removal of servers there by improving the Scalability and ensuring Fault Tolerance"
         ]
     }
 ]

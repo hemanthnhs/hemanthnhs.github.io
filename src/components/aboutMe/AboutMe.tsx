@@ -1,7 +1,7 @@
 import "./AboutMe.css"
-import { List, Avatar, Col, Row, Image } from "antd"
+import { Avatar, Image } from "antd"
 import { Tag } from "antd"
-import { useEffect, useState, lazy } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 import { Icons } from "./IconComponents"
 import TerminalView from "./TerminalView"
@@ -24,7 +24,6 @@ const AboutMe = () => {
     }, [])
 
     const renderSkills = (skill: string) => {
-        console.log(".")
         let skill_list = skills[skill]
         let res: any = []
         skill_list.forEach((skill_item: ["string", "string"]) => {
@@ -54,7 +53,14 @@ const AboutMe = () => {
                 <div className="text-center">
                     <Avatar
                         size={120}
-                        icon={<Image src={"./assets/images/profile-image.jpeg"} />}
+                        icon={
+                            <Image
+                                src={"./assets/images/profile-image.jpeg"}
+                                alt="Hemanth Sai Nimmala"
+                                preview={false}
+                            />
+                        }
+                        alt="Hemanth Sai Nimmala"
                     />
                 </div>
                 <div className="text-center">
@@ -63,14 +69,20 @@ const AboutMe = () => {
                 </div>
                 <TerminalView />
                 <div className="text-center">
-                    Languages & Frameworks {renderSkills("programming")}
+                    <span className="skill-label">Languages & Frameworks</span>
+                    {renderSkills("programming")}
                 </div>
                 <div className="text-center">
-                    Web Technologies {renderSkills("web")}
+                    <span className="skill-label">Web Technologies</span>
+                    {renderSkills("web")}
                 </div>
-                <div className="text-center">Tools {renderSkills("tools")}</div>
                 <div className="text-center">
-                    Databases {renderSkills("databases")}
+                    <span className="skill-label">Databases</span>
+                    {renderSkills("databases")}
+                </div>
+                <div className="text-center">
+                    <span className="skill-label">Tools</span>
+                    {renderSkills("tools")}
                 </div>
             </div>
         </div>

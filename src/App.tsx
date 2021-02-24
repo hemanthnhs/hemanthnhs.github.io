@@ -1,15 +1,17 @@
 import "./App.css"
 import Header from "./components/Header"
-import RightContainer from "./components/RightContainer"
+import ContentContainer from "./components/ContentContainer"
 import { Row, Col } from "antd"
+import { useState } from "react"
 
 const App = () => {
+    const [currentMenuInView, setMenuInView] = useState("about")
     return (
         <div>
-            <Header />
+            <Header currentMenuInView={currentMenuInView} />
             <Row>
                 <Col offset={1} span={22}>
-                    <RightContainer />
+                    <ContentContainer setMenuInView={setMenuInView} />
                 </Col>
             </Row>
         </div>

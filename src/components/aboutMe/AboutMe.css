@@ -1,5 +1,5 @@
 .intro {
-    margin-top: 20px;
+    padding-top: 40px;
     font-size: large;
 }
 
@@ -86,4 +86,9 @@
     font-size: small;
     padding-left: 20px;
     margin-top: 20px;
+}
+
+.skill-label {
+    color: silver;
+    margin-right: 10px;
 }

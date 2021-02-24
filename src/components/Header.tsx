@@ -1,34 +1,64 @@
-import { Layout, Menu, Breadcrumb } from "antd"
+import { Menu } from "antd"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { IoPersonCircleOutline, IoCodeWorkingOutline } from "react-icons/io5"
 import { GrProjects } from "react-icons/gr"
 
-const { Header, Content, Footer } = Layout
-const HeaderComponent = () => {
+const HeaderComponent = ({ currentMenuInView }: any) => {
     return (
-        <div>
-            <Menu theme="light" mode="horizontal" defaultSelectedKeys={["1"]}>
+        <div className="header">
+            <Menu
+                theme="light"
+                mode="horizontal"
+                defaultSelectedKeys={["about"]}
+                selectedKeys={[currentMenuInView]}
+            >
+                {currentMenuInView != "about" && (
+                    <a
+                        href="https://www.linkedin.com/in/hemanthnhs/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="header-name"
+                    >
+                        #Hemanth
+                    </a>
+                )}
                 <Menu.Item>
-                    <span className="linkedin-btn">
+                    <a
+                        href="https://www.linkedin.com/in/hemanthnhs/"
+                        target="_blank"
+                        className="linkedin-btn"
+                        rel="noreferrer"
+                    >
                         <FaLinkedin />
-                    </span>
+                    </a>
                 </Menu.Item>
                 <Menu.Item>
-                    <span className="github-btn">
+                    <a
+                        href="https://github.com/hemanthnhs"
+                        target="_blank"
+                        className="github-btn"
+                        rel="noreferrer"
+                    >
                         <FaGithub />
-                    </span>
+                    </a>
                 </Menu.Item>
-                <Menu.Item className="pull-right" key="3">
-                    <GrProjects className="logo-btn" />
-                    Projects
+                <Menu.Item className="pull-right" key="project">
+                    <a href="#projects">
+                        <GrProjects className="logo-btn" />
+                        Projects
+                    </a>
                 </Menu.Item>
-                <Menu.Item className="pull-right" key="2">
-                    <IoCodeWorkingOutline className="logo-btn" />
-                    Work Experience
+                <Menu.Item className="pull-right" key="work">
+                    <a href="#work">
+                        <IoCodeWorkingOutline className="logo-btn" />
+                        Work Experience
+                    </a>
                 </Menu.Item>
-                <Menu.Item className="pull-right" key="1">
-                    <IoPersonCircleOutline className="logo-btn" />
-                    About Me
+                <Menu.Item className="pull-right" key="about">
+                    <a href="#">
+                        <IoPersonCircleOutline className="logo-btn" />
+                        About Me
+                    </a>
                 </Menu.Item>
             </Menu>
         </div>

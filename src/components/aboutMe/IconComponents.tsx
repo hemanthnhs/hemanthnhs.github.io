@@ -9,7 +9,6 @@ import {
     FaGithubAlt,
     FaAws,
     FaDocker,
-    FaCuttlefish,
 } from "react-icons/fa"
 import {
     SiSpring,

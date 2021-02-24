@@ -37,15 +37,49 @@ body {
 
 .linkedin-btn {
     font-size: xx-large;
-    color: #2867b2;
+    color: #2867b2 !important;
 }
 
 .github-btn {
     font-size: xx-large;
-    color: black;
+    color: #082c58 !important;
 }
 
 .logo-btn {
     font-size: large;
     margin-right: 7px;
+}
+
+.view-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.header-name {
+    margin-left: 20px;
+    color: #15748a;
+    font-weight: bold;
+    font-size: medium;
+    animation: fadeIn ease 3s;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    20% {
+        width: fit-content;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

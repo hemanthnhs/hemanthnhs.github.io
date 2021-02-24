@@ -26,7 +26,7 @@ const TerminalView = () => {
                 </div>
                 <div>
                     <span className="terminal-user">
-                        hemanth@Message:<span className="tilde-seperation">~</span>
+                        hemanth@Interest:<span className="tilde-seperation">~</span>
                         <span className="dollar-prompt">$</span>
                     </span>
                     <span className="terminal-text">
