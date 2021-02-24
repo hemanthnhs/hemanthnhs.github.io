@@ -1,0 +1,89 @@
+.intro {
+    margin-top: 20px;
+    font-size: large;
+}
+
+.name {
+    font-size: xx-large;
+}
+
+.skill-tag {
+    font-size: 15px;
+}
+
+.skill-tag svg {
+    margin-right: 4px;
+}
+
+.underscore-area {
+    min-width: 20px;
+    display: inline-block;
+}
+
+.terminal {
+    background-color: #000000e8;
+    color: white;
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 25px;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    width: 70%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.terminal-user {
+    color: #0fbb0f;
+    width: 200px;
+    display: inline-block;
+}
+
+.tilde-seperation {
+    color: cadetblue;
+}
+
+.dollar-prompt {
+    color: cadetblue;
+    margin-right: 10px;
+}
+
+#terminal-cursor-prompt {
+    display: inline-block;
+    height: 16px;
+    margin-bottom: -1px;
+    width: 8px;
+    margin-left: 1px;
+    animation: blink 1200ms linear infinite;
+}
+@keyframes blink {
+    0% {
+        background: #dadbe9;
+    }
+    49% {
+        background: #dadbe9;
+    }
+    60% {
+        background: transparent;
+    }
+    99% {
+        background: transparent;
+    }
+    100% {
+        background: #dadbe9;
+    }
+}
+
+#terminal-bar {
+    width: 70%;
+    height: 20px;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: 15%;
+    background: linear-gradient(#504b45 0%, #3c3b37 100%);
+    color: #ffffffdb;
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: small;
+    padding-left: 20px;
+    margin-top: 20px;
+}

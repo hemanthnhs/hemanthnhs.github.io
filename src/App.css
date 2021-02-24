@@ -34,3 +34,18 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
 }
+
+.linkedin-btn {
+    font-size: xx-large;
+    color: #2867b2;
+}
+
+.github-btn {
+    font-size: xx-large;
+    color: black;
+}
+
+.logo-btn {
+    font-size: large;
+    margin-right: 7px;
+}
