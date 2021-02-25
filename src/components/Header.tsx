@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { IoPersonCircleOutline, IoCodeWorkingOutline } from "react-icons/io5"
 import { GrProjects } from "react-icons/gr"
 
-const HeaderComponent = ({ currentMenuInView }: any) => {
+const HeaderComponent = ({ currentMenuInView, isMobile }: any) => {
     return (
         <div className="header">
             <Menu
@@ -11,8 +11,9 @@ const HeaderComponent = ({ currentMenuInView }: any) => {
                 mode="horizontal"
                 defaultSelectedKeys={["about"]}
                 selectedKeys={[currentMenuInView]}
+                selectable={!isMobile}
             >
-                {currentMenuInView != "about" && (
+                {!isMobile && currentMenuInView != "about" && (
                     <a
                         href="https://www.linkedin.com/in/hemanthnhs/"
                         target="_blank"
@@ -42,24 +43,28 @@ const HeaderComponent = ({ currentMenuInView }: any) => {
                         <FaGithub />
                     </a>
                 </Menu.Item>
-                <Menu.Item className="pull-right" key="project">
-                    <a href="#projects">
-                        <GrProjects className="logo-btn" />
-                        Projects
-                    </a>
-                </Menu.Item>
-                <Menu.Item className="pull-right" key="work">
-                    <a href="#work">
-                        <IoCodeWorkingOutline className="logo-btn" />
-                        Work Experience
-                    </a>
-                </Menu.Item>
-                <Menu.Item className="pull-right" key="about">
-                    <a href="#">
-                        <IoPersonCircleOutline className="logo-btn" />
-                        About Me
-                    </a>
-                </Menu.Item>
+                {!isMobile && (
+                    <>
+                        <Menu.Item className="pull-right" key="project">
+                            <a href="#projects">
+                                <GrProjects className="logo-btn" />
+                                Projects
+                            </a>
+                        </Menu.Item>
+                        <Menu.Item className="pull-right" key="work">
+                            <a href="#work">
+                                <IoCodeWorkingOutline className="logo-btn" />
+                                Work Experience
+                            </a>
+                        </Menu.Item>
+                        <Menu.Item className="pull-right" key="about">
+                            <a href="#">
+                                <IoPersonCircleOutline className="logo-btn" />
+                                About Me
+                            </a>
+                        </Menu.Item>
+                    </>
+                )}
             </Menu>
         </div>
     )

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import { Icons } from "./IconComponents"
 import TerminalView from "./TerminalView"
-const AboutMe = () => {
+const AboutMe = ({ isMobile }: { isMobile: boolean }) => {
     const [skills, setSkills] = useState<any>({
         programming: [],
         web: [],
@@ -30,6 +30,7 @@ const AboutMe = () => {
             if (skill_item[1]) {
                 res.push(
                     <Tag
+                        key={skill_item[0]}
                         className="skill-tag"
                         color="#55acee"
                         icon={Icons[skill_item[1]]}
@@ -39,7 +40,7 @@ const AboutMe = () => {
                 )
             } else {
                 res.push(
-                    <Tag className="skill-tag" color="#55acee">
+                    <Tag className="skill-tag" color="#55acee" key={skill_item[0]}>
                         {skill_item[0]}
                     </Tag>
                 )
@@ -67,21 +68,37 @@ const AboutMe = () => {
                     Hey I&apos;m
                     <span className="name">&nbsp;#Hemanth</span>
                 </div>
-                <TerminalView />
+                <TerminalView isMobile={isMobile} />
                 <div className="text-center">
-                    <span className="skill-label">Languages & Frameworks</span>
+                    <span
+                        className={"skill-label" + (isMobile ? " mobile-block" : "")}
+                    >
+                        Languages & Frameworks
+                    </span>
                     {renderSkills("programming")}
                 </div>
                 <div className="text-center">
-                    <span className="skill-label">Web Technologies</span>
+                    <span
+                        className={"skill-label" + (isMobile ? " mobile-block" : "")}
+                    >
+                        Web Technologies
+                    </span>
                     {renderSkills("web")}
                 </div>
                 <div className="text-center">
-                    <span className="skill-label">Databases</span>
+                    <span
+                        className={"skill-label" + (isMobile ? " mobile-block" : "")}
+                    >
+                        Databases
+                    </span>
                     {renderSkills("databases")}
                 </div>
                 <div className="text-center">
-                    <span className="skill-label">Tools</span>
+                    <span
+                        className={"skill-label" + (isMobile ? " mobile-block" : "")}
+                    >
+                        Tools
+                    </span>
                     {renderSkills("tools")}
                 </div>
             </div>

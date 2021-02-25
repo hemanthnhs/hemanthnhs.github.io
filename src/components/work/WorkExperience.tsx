@@ -4,7 +4,7 @@ import axios from "axios"
 import { List, Avatar, Col, Card } from "antd"
 import { EnvironmentOutlined, FireTwoTone, LinkOutlined } from "@ant-design/icons"
 
-const WorkExperience = () => {
+const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
     const [work, setWork] = useState([])
     useEffect(() => {
         axios
@@ -24,6 +24,7 @@ const WorkExperience = () => {
                 renderItem={(item: any) => (
                     <List.Item
                         extra={
+                            !isMobile &&
                             item.links.length != 0 && (
                                 <Col span={4} offset={1}>
                                     <Card
@@ -81,44 +82,104 @@ const WorkExperience = () => {
                             }
                             title={
                                 <>
-                                    <div>
-                                        <span className="work-position">
-                                            {item.position}
-                                        </span>
-                                        <span className="work-dates">
-                                            {item.startDate + " - "}
-                                            {item.endDate ? item.endDate : "Present"}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span className="work-company">
-                                            {item.companyName}
-                                        </span>
-                                        <span className="work-location">
-                                            <span className="work-loc-icon">
-                                                <EnvironmentOutlined />
-                                            </span>
-                                            {item.location}
-                                        </span>
-                                    </div>
+                                    {isMobile ? (
+                                        <>
+                                            <div className="work-position">
+                                                {item.position}
+                                            </div>
+                                            <div className="work-company">
+                                                {item.companyName}
+                                            </div>
+                                            <div
+                                                className={
+                                                    "work-location" +
+                                                    (isMobile
+                                                        ? " no-margin-left"
+                                                        : "")
+                                                }
+                                            >
+                                                <span className="work-loc-icon">
+                                                    <EnvironmentOutlined />
+                                                </span>
+                                                {item.location}
+                                            </div>
+                                            <div
+                                                className={
+                                                    "work-dates" +
+                                                    (isMobile
+                                                        ? " no-margin-left"
+                                                        : "")
+                                                }
+                                            >
+                                                {item.startDate + " - "}
+                                                {item.endDate
+                                                    ? item.endDate
+                                                    : "Present"}
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <div>
+                                                <span className="work-position">
+                                                    {item.position}
+                                                </span>
+                                                <span className="work-dates">
+                                                    {item.startDate + " - "}
+                                                    {item.endDate
+                                                        ? item.endDate
+                                                        : "Present"}
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span className="work-company">
+                                                    {item.companyName}
+                                                </span>
+                                                <span className="work-location">
+                                                    <span className="work-loc-icon">
+                                                        <EnvironmentOutlined />
+                                                    </span>
+                                                    {item.location}
+                                                </span>
+                                            </div>
+                                        </>
+                                    )}
                                 </>
                             }
                             description={
-                                <List
-                                    className="work-responsibility-list"
-                                    size="small"
-                                    dataSource={item.responsibilities}
-                                    renderItem={(respItem: any) => (
-                                        <List.Item className="work-responsibility">
-                                            <span className="work-responsibility-icon">
-                                                <FireTwoTone />
-                                            </span>
-                                            {respItem}
-                                        </List.Item>
-                                    )}
-                                />
+                                !isMobile && (
+                                    <List
+                                        className="work-responsibility-list"
+                                        size="small"
+                                        dataSource={item.responsibilities}
+                                        renderItem={(respItem: any) => (
+                                            <List.Item className="work-responsibility">
+                                                <span className="work-responsibility-icon">
+                                                    <FireTwoTone />
+                                                </span>
+                                                {respItem.text}
+                                            </List.Item>
+                                        )}
+                                    />
+                                )
                             }
                         />
+                        {isMobile && (
+                            <List
+                                className="work-responsibility-list"
+                                size="small"
+                                dataSource={item.responsibilities}
+                                renderItem={(respItem: any) => (
+                                    <List.Item className="work-responsibility">
+                                        <span className="work-responsibility-icon">
+                                            <FireTwoTone />
+                                        </span>
+                                        {respItem.mobileText
+                                            ? respItem.mobileText
+                                            : respItem.text}
+                                    </List.Item>
+                                )}
+                            />
+                        )}
                     </List.Item>
                 )}
             />

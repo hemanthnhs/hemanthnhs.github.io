@@ -39,7 +39,7 @@ const setCurrentMenu = (
     }
 }
 
-const ContentContainer = ({ setMenuInView }: any) => {
+const ContentContainer = ({ setMenuInView, isMobile }: any) => {
     const aboutRef: any = useRef()
     const workRef: any = useRef()
     const projectRef: any = useRef()
@@ -50,16 +50,16 @@ const ContentContainer = ({ setMenuInView }: any) => {
     return (
         <div>
             <div ref={aboutRef} className="view-container" id="about">
-                <AboutMe />
+                <AboutMe isMobile={isMobile} />
             </div>
             <span id="work"></span>
-            <Divider></Divider>
+            <Divider>{isMobile && "Work"}</Divider>
             <div ref={workRef} className="view-container">
-                <WorkExperience />
+                <WorkExperience isMobile={isMobile} />
             </div>
-            <Divider></Divider>
+            <Divider>{isMobile && "Projects"}</Divider>
             <div ref={projectRef} className="view-container" id="projects">
-                <ProjectContainer />
+                <ProjectContainer isMobile={isMobile} />
             </div>
         </div>
     )

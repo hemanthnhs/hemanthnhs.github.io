@@ -6,7 +6,7 @@ import "./Projects.css"
 
 const { Meta } = Card
 
-const Projects = () => {
+const Projects = ({ isMobile }: { isMobile: boolean }) => {
     const [projects, setProjects] = useState([])
     useEffect(() => {
         axios
@@ -18,6 +18,7 @@ const Projects = () => {
                 console.log("Error occured while getting projects data", err)
             })
     }, [])
+    let pageSize: number = isMobile ? 1 : 4
     return (
         <List
             grid={{
@@ -28,6 +29,9 @@ const Projects = () => {
                 lg: 3,
                 xl: 4,
                 xxl: 4,
+            }}
+            pagination={{
+                pageSize: pageSize,
             }}
             dataSource={projects}
             renderItem={(project: any) => (

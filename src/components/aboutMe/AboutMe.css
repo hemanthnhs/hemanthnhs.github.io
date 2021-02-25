@@ -26,9 +26,7 @@
     font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     padding: 25px;
-    margin-left: 15%;
     margin-bottom: 50px;
-    width: 70%;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -91,4 +89,8 @@
 .skill-label {
     color: silver;
     margin-right: 10px;
+}
+
+.no-margin-left {
+    margin-left: 0px !important;
 }

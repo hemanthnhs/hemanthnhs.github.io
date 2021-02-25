@@ -6,12 +6,16 @@ import { useState } from "react"
 
 const App = () => {
     const [currentMenuInView, setMenuInView] = useState("about")
+    const isMobile = window.innerWidth < 480
     return (
         <div>
-            <Header currentMenuInView={currentMenuInView} />
+            <Header isMobile={isMobile} currentMenuInView={currentMenuInView} />
             <Row>
                 <Col offset={1} span={22}>
-                    <ContentContainer setMenuInView={setMenuInView} />
+                    <ContentContainer
+                        isMobile={isMobile}
+                        setMenuInView={setMenuInView}
+                    />
                 </Col>
             </Row>
         </div>
