@@ -11,6 +11,7 @@ const AboutMe = ({ isMobile }: { isMobile: boolean }) => {
         web: [],
         tools: [],
         databases: [],
+        certifications: [],
     })
     useEffect(() => {
         axios
@@ -100,6 +101,14 @@ const AboutMe = ({ isMobile }: { isMobile: boolean }) => {
                         Tools
                     </span>
                     {renderSkills("tools")}
+                </div>
+                <div className="text-center">
+                    <span
+                        className={"skill-label" + (isMobile ? " mobile-block" : "")}
+                    >
+                        Certifications
+                    </span>
+                    {renderSkills("certifications")}
                 </div>
             </div>
         </div>

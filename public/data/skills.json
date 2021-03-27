@@ -30,5 +30,6 @@
         ["MongoDB", "DiMongodb"],
         ["Redis", "DiRedis"],
         ["ElasticSearch", "SiElasticsearch"]
-    ]
+    ],
+    "certifications": [["AWS Certified Cloud Practitioner", "FaAws"]]
 }
