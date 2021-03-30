@@ -12,12 +12,15 @@
                 "mobileText": "Developed Risk Analysis application using Spring, Angular to present key analytics assisting investors understand portfolio impacts under different market conditions."
             },
             {
-                "text": "Engineered visualizations for market sensitivity using Angular, contributed to launch advanced portfolio management suite for firms and advisors to seamlessly construct and manage fixed income portfolios.",
-                "mobileText": "Engineered visualizations using Angular and contributed to launch advanced portfolio management suite for firms to seamlessly construct and manage fixed income portfolios."
+                "text": "Engineered visualizations for market sensitivity using Angular, SpringBoot and integrated with advanced portfolio management suite for firms and advisors to seamlessly construct and manage fixed income portfolios.",
+                "mobileText": "Engineered visualizations using Angular and integrated with advanced portfolio management suite for firms to seamlessly construct and manage fixed income portfolios."
             },
             {
                 "text": "Streamlined network calls and designed a data processing algorithm for components to improve performance and to reduce the Time to Interactive (TTI) of application.",
                 "mobileText": "Streamlined network calls and designed a data processing algorithm for components to improve performance and to reduce the TTI of application."
+            },
+            {
+                "text": "Modularized simulation process using Python, Flask and exposed APIs to integrate with Angular frontend."
             }
         ],
         "linksTitle": "Featured Links",
@@ -60,7 +63,18 @@
             }
         ],
         "linksTitle": "Featured Links",
-        "links": []
+        "links": [
+            {
+                "title": "Extended ECM",
+                "link": "https://www.opentext.com/products-and-solutions/products/enterprise-content-management/extended-ecm-platform",
+                "logo": "https://pbs.twimg.com/profile_images/1321499492852494338/TXGlEz69_400x400.jpg"
+            },
+            {
+                "title": "xECM for Engineering",
+                "link": "https://www.opentext.com/products-and-solutions/products/enterprise-content-management/extended-ecm-platform/opentext-extended-ecm-for-engineering",
+                "logo": "https://pbs.twimg.com/profile_images/1321499492852494338/TXGlEz69_400x400.jpg"
+            }
+        ]
     },
     {
         "companyName": "Voonik Technologies",
