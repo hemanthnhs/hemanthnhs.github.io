@@ -94,3 +94,17 @@
 .no-margin-left {
     margin-left: 0px !important;
 }
+
+.work-position {
+    font-size: medium;
+}
+
+.work-company {
+    font-size: medium;
+}
+
+.terminal-heading {
+    font-size: small;
+    color: #ffffffdb;
+    padding-top: 2px;
+}

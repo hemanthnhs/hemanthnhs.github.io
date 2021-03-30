@@ -54,10 +54,12 @@ const Projects = ({ isMobile }: { isMobile: boolean }) => {
                                     dataSource={project.accomplishments}
                                     renderItem={(respItem: any) => (
                                         <List.Item className="project-accomplishment">
-                                            <span>
-                                                <FireTwoTone />
-                                            </span>
-                                            {respItem}
+                                            <p>
+                                                <span>
+                                                    <FireTwoTone />
+                                                </span>
+                                                {respItem}
+                                            </p>
                                         </List.Item>
                                     )}
                                 />

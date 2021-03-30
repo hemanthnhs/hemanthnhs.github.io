@@ -84,12 +84,12 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                 <>
                                     {isMobile ? (
                                         <>
-                                            <div className="work-position">
+                                            <h1 className="work-position">
                                                 {item.position}
-                                            </div>
-                                            <div className="work-company">
+                                            </h1>
+                                            <h1 className="work-company">
                                                 {item.companyName}
-                                            </div>
+                                            </h1>
                                             <div
                                                 className={
                                                     "work-location" +
@@ -120,9 +120,9 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                     ) : (
                                         <>
                                             <div>
-                                                <span className="work-position">
+                                                <h3 className="work-position inline-heading">
                                                     {item.position}
-                                                </span>
+                                                </h3>
                                                 <span className="work-dates">
                                                     {item.startDate + " - "}
                                                     {item.endDate
@@ -131,9 +131,9 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                                 </span>
                                             </div>
                                             <div>
-                                                <span className="work-company">
+                                                <h3 className="work-company inline-heading">
                                                     {item.companyName}
-                                                </span>
+                                                </h3>
                                                 <span className="work-location">
                                                     <span className="work-loc-icon">
                                                         <EnvironmentOutlined />
@@ -153,10 +153,12 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                         dataSource={item.responsibilities}
                                         renderItem={(respItem: any) => (
                                             <List.Item className="work-responsibility">
-                                                <span className="work-responsibility-icon">
-                                                    <FireTwoTone />
-                                                </span>
-                                                {respItem.text}
+                                                <p>
+                                                    <span className="work-responsibility-icon">
+                                                        <FireTwoTone />
+                                                    </span>
+                                                    {respItem.text}
+                                                </p>
                                             </List.Item>
                                         )}
                                     />
@@ -170,12 +172,14 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                 dataSource={item.responsibilities}
                                 renderItem={(respItem: any) => (
                                     <List.Item className="work-responsibility">
-                                        <span className="work-responsibility-icon">
-                                            <FireTwoTone />
-                                        </span>
-                                        {respItem.mobileText
-                                            ? respItem.mobileText
-                                            : respItem.text}
+                                        <p>
+                                            <span className="work-responsibility-icon">
+                                                <FireTwoTone />
+                                            </span>
+                                            {respItem.mobileText
+                                                ? respItem.mobileText
+                                                : respItem.text}
+                                        </p>
                                     </List.Item>
                                 )}
                             />

@@ -67,7 +67,9 @@ const AboutMe = ({ isMobile }: { isMobile: boolean }) => {
                 </div>
                 <div className="text-center">
                     Hey I&apos;m
-                    <span className="name">&nbsp;#Hemanth</span>
+                    <span className="name">
+                        &nbsp;#<h1 className="inline-heading">Hemanth</h1>
+                    </span>
                 </div>
                 <TerminalView isMobile={isMobile} />
                 <div className="text-center">

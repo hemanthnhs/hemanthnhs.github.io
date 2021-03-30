@@ -87,3 +87,15 @@ body {
 .mobile-block {
     display: block;
 }
+
+p {
+    margin-bottom: 0px;
+}
+
+.inline-heading {
+    display: inline;
+}
+
+.inline {
+    display: inline;
+}

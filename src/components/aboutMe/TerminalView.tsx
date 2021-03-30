@@ -11,7 +11,7 @@ const TerminalView = ({ isMobile }: { isMobile: boolean }) => {
     return (
         <div>
             <div style={terminalStyle} id="terminal-bar">
-                Hemanth Sai Nimmala: ~
+                <h1 className="terminal-heading">Hemanth Sai Nimmala: ~</h1>
             </div>
             <div style={terminalStyle} className="terminal">
                 <div>
@@ -22,7 +22,9 @@ const TerminalView = ({ isMobile }: { isMobile: boolean }) => {
                     <span
                         className={"terminal-text" + (isMobile && " mobile-block")}
                     >
-                        Ex-Software Engineer at Fidelity, OpenText, Voonik
+                        <p className="inline">
+                            Ex-Software Engineer at Fidelity, OpenText, Voonik
+                        </p>
                     </span>
                 </div>
                 <div>
@@ -34,7 +36,7 @@ const TerminalView = ({ isMobile }: { isMobile: boolean }) => {
                     <span
                         className={"terminal-text" + (isMobile && " mobile-block")}
                     >
-                        {educationMsg}
+                        <p className="inline">{educationMsg}</p>
                     </span>
                 </div>
                 <div>
@@ -46,7 +48,9 @@ const TerminalView = ({ isMobile }: { isMobile: boolean }) => {
                     <span
                         className={"terminal-text" + (isMobile && " mobile-block")}
                     >
-                        I love developing Software Applications...
+                        <p className="inline">
+                            I love developing Software Applications...
+                        </p>
                     </span>
                     <span id="terminal-cursor-prompt"></span>
                 </div>
