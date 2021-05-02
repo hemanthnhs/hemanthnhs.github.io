@@ -6,21 +6,22 @@
         "accomplishments": [
             "Designed system architecture and created a stateless server using Node.js, Express.js to detect and identify plagiarism between multi-file programs using efficient structural comparison techniques",
             "Designed algorithm to detect similarities in the code that attempts to avoid detection by performing AST transformations",
-            "Developed UI with React by considering usability heuristic principles to selectively examine and compare similarities"
+            "Developed User Interface with React by considering usability heuristic principles to selectively examine and compare similarities"
         ]
     },
     {
-        "title": "eShopR - eCommerce App",
+        "title": "eShopR - eCommerce Application",
         "date": "Dec 2019",
         "headerImg": "https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce.jpg",
         "accomplishments": [
             "Designed scalable ecommerce application with a seller portal for inventory management and to analyze purchase trends",
             "Created landing page builder using React allowing sellers to dynamically design web pages to present personalized stores",
+            "Integrated with AWS by calling lambda functions to process products meta data and persisted the data in S3 buckets",
             "Implemented product search and recommendation using Elasticsearch to retrieve results 60% faster"
         ]
     },
     {
-        "title": "eStock - Stock Market Trading App",
+        "title": "eStock - Stock Market Trading Application",
         "date": "Apr 2019",
         "headerImg": "https://s.yimg.com/uu/api/res/1.2/mTvND9vpWeCIBjcuz_1rPA--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/hd/cp-video-transcode/prod/2020-11/18/5fb59790e75f6958827fa097/5fb59790e75f6958827fa098_o_U_v2.jpg",
         "accomplishments": [
@@ -30,13 +31,33 @@
         ]
     },
     {
-        "title": "eFactory - Factory Manager",
+        "title": "eFactory - Large Scale Distributed Factory Manager",
         "date": "Apr 2019",
         "headerImg": "https://www.ptc.com/-/media/Images/Redesign/Blogs/digital-transformation-trends-2019.jpg?h=280&la=en&w=600&hash=9604B2B49CBD7882B9832B89241DF33B",
         "accomplishments": [
             "Developed a scalable distributed client-server application for a robot factory with Primary-Backup replication protocol to improve parallelism and availability",
             "Implemented static and dynamic load balancing techniques to efficiently distribute customer requets to different factories to facilitate High availability",
-            "Created a membership server, to allow and manage dynamic addition/removal of servers there by improving the Scalability and ensuring Fault Tolerance"
+            "Created a membership server, to allow and manage dynamic addition/removal of servers there by improving the Scalability and ensuring Fault Tolerance of the system"
+        ]
+    },
+    {
+        "title": "Web Crawler and eGrader",
+        "date": "Apr 2021",
+        "headerImg": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_Web_Crawler.jpg",
+        "accomplishments": [
+            "Designed and developed a high performance multithreaded tropical web crawler using Python to crawl pages based on the seed urls",
+            "Developed an interactive web interface using React to safely view the web pages in a sandboxed iframe and thereby to assess the revelance of page to the topic",
+            "Implemented a grader dashboard using React, HighCharts to observe various metrics, terms related to the pages and to generate pdf reports"
+        ]
+    },
+    {
+        "title": "University Management System",
+        "date": "Nov 2016",
+        "headerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThmluBYph67iMKte57ng7YFpZxrQfAVGL9gA&usqp=CAU",
+        "accomplishments": [
+            "Designed and developed web application using Angular to facilitate various university services (attendance, results portal, workshops, events, registration, newsletter, discussion forum) for students and faculty",
+            "Researched and implemented predictive analytic models using Python to develop a performance rating system to the courses based on student surveys",
+            "Applied data-driven transformations using D3.js, jQuery, Highcharts to observe and present various reports related to student activities and reports "
         ]
     }
 ]
