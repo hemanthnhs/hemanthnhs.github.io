@@ -33,6 +33,10 @@
     margin-left: 10px;
 }
 
+.work-dates-additional{
+    color: slategrey;
+}
+
 .work-responsibility {
     padding: 4px 2px 4px 0px !important;
 }

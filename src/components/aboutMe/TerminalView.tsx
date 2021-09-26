@@ -23,10 +23,25 @@ const TerminalView = ({ isMobile }: { isMobile: boolean }) => {
                         className={"terminal-text" + (isMobile && " mobile-block")}
                     >
                         <p className="inline">
-                            Ex-Software Engineer at Fidelity, OpenText, Voonik
+                            Senior Software Engineer at Fidelity Investments
                         </p>
                     </span>
                 </div>
+                {!isMobile && <div>
+                    <span className="terminal-user">
+                        {userName}@Previous:<span className="tilde-seperation">~</span>
+                        <span className="dollar-prompt">$</span>
+                    </span>
+                    <span
+                        className={"terminal-text" + (isMobile && " mobile-block")}
+                    >
+                        <p className="inline">
+                            Ex-Software Engineer at OpenText, Voonik
+                        </p>
+                    </span>
+                </div>
+                }
+                
                 <div>
                     <span className="terminal-user">
                         {userName}@Education:

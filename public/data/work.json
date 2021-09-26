@@ -1,11 +1,15 @@
 [
     {
         "companyName": "Fidelity Investments",
-        "position": "Software Engineer Co-op",
+        "position": "Senior Software Engineer",
         "logo": "fidelity-investments.png",
         "location": "Boston, Massachussets",
-        "startDate": "Jan, 2020",
-        "endDate": "Sept, 2020",
+        "startDate": "Jun 2021",
+        "additionalPosition": {
+            "position": "Co-op",
+            "startDate": "Jan 2020",
+            "endDate": "Sep 2020"
+        },
         "responsibilities": [
             {
                 "text": "Developed Risk Analysis application using Spring, Angular to present key analytics assisting investors understand portfolio impacts under different market conditions.",
@@ -42,8 +46,8 @@
         "position": "Software Engineer",
         "logo": "opentext.jpg",
         "location": "Hyderabad, India",
-        "startDate": "Sept, 2017",
-        "endDate": "Nov, 2018",
+        "startDate": "Sep 2017",
+        "endDate": "Nov 2018",
         "responsibilities": [
             {
                 "text": "Developed widgets for Enterprise Content Management using Java, JavaScript to build persona driven dashboards for efficient control of projects and to observe insights of work processes.",
@@ -81,8 +85,8 @@
         "position": "Software Development Engineer Intern",
         "logo": "voonik.png",
         "location": "Bengaluru, India",
-        "startDate": "May, 2016",
-        "endDate": "Feb, 2017",
+        "startDate": "May 2016",
+        "endDate": "Feb 2017",
         "responsibilities": [
             {
                 "text": "Developed APIs for application using Ruby on Rails to enable self-service, bringing down high hold times to ensure customer satisfaction, there by minimizing customer-human interaction.",

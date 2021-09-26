@@ -116,6 +116,25 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                                     ? item.endDate
                                                     : "Present"}
                                             </div>
+                                            {item.additionalPosition && (
+                                                <div
+                                                    className={
+                                                        "work-dates" +
+                                                        (isMobile
+                                                            ? " no-margin-left"
+                                                            : "")
+                                                    }
+                                                >
+                                                    {item.additionalPosition
+                                                        .startDate + " - "}
+                                                    {item.additionalPosition
+                                                        .endDate +
+                                                        " (" +
+                                                        item.additionalPosition
+                                                            .position +
+                                                        ")"}
+                                                </div>
+                                            )}
                                         </>
                                     ) : (
                                         <>
@@ -129,6 +148,23 @@ const WorkExperience = ({ isMobile }: { isMobile: boolean }) => {
                                                         ? item.endDate
                                                         : "Present"}
                                                 </span>
+                                                {item.additionalPosition && (
+                                                    <span className="work-dates-additional">
+                                                        ,
+                                                    </span>
+                                                )}
+                                                {item.additionalPosition && (
+                                                    <span className="work-dates">
+                                                        {item.additionalPosition
+                                                            .startDate + " - "}
+                                                        {item.additionalPosition
+                                                            .endDate +
+                                                            " (" +
+                                                            item.additionalPosition
+                                                                .position +
+                                                            ")"}
+                                                    </span>
+                                                )}
                                             </div>
                                             <div>
                                                 <h3 className="work-company inline-heading">
